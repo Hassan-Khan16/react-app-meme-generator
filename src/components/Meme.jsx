@@ -1,9 +1,8 @@
-
 function Meme() {
     return (
         <div className="meme">
             <form className="form">
-                <div>
+                <div className="form-group">
                     <label htmlFor="top-text" className="form-label">Top text</label>
                     <input
                         id="top-text"
@@ -11,7 +10,7 @@ function Meme() {
                         className="form-input"
                         placeholder="Shut up" />
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="bottom-text" className="form-label">Bottom text</label>
                     <input
                         id="bottom-text"
