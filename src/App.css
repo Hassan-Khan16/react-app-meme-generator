@@ -1,3 +1,73 @@
-h1 {
-  background-color: yellow;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+.header {
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 20px 30px;
+}
+
+.header-img {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header-title {
+  margin-right: auto;
+  font-size: 1.313rem;
+  font-weight: 700;
+}
+
+.header-project {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.meme {
+  padding: 37px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 35px 33px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-input {
+  margin-top: 5px;
+  border: 1px solid #D1D5DB;
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  text-indent: 8px;
+}
+
+.form-button {
+  grid-column: 1/-1;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
