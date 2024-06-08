@@ -1,5 +1,4 @@
 import React from "react"
-import memesData from "../memesData.js"
 
 function Meme() {
     const [meme, setMeme] = React.useState({
