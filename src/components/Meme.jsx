@@ -4,7 +4,7 @@ function Meme() {
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText: "",
-        randomImage: "http://i.imgflip.com/1bij.jpg"
+        randomImage: ""
     })
     const [allMemes, setallMemes] = React.useState([])
 
@@ -13,6 +13,12 @@ function Meme() {
             .then(res => res.json())
             .then(data => setallMemes(data.data.memes))
     }, [])
+
+    React.useEffect(() => {
+        if (allMemes.length > 0) {
+            getMemeImage()
+        }
+    }, [allMemes])
 
     function getMemeImage() {
         const randomNumber = Math.floor(Math.random() * allMemes.length)
@@ -23,8 +29,6 @@ function Meme() {
         })
         )
     }
-
-    console.log(meme)
 
     function handleChange(event) {
         const { name, value } = event.target
